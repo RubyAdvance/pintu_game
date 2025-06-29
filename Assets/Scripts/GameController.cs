@@ -37,7 +37,25 @@ public class GameController : MonoBehaviour
 
     public static GameController Instance
     {
-       get { return _instance; }
+        get { return _instance; }
+    }
+    /// <summary>
+    /// 已完成的个数
+    /// </summary>
+    private int curFinishedCount = 0;
+
+    public int CurFinishedCount
+    {
+        get { return curFinishedCount; }
+        set
+        {
+            curFinishedCount = value;
+            if (curFinishedCount == 9)
+            {
+                RefreshLevel();
+                curFinishedCount = 0;
+            }
+        }
     }
 
     private void Awake()
@@ -95,7 +113,7 @@ public class GameController : MonoBehaviour
             var targetIndex = subpicArr[i].name.Split('_')[1]; // 获取subpic的下标
             subImages[i].sprite = subpicArr[i];
             subImages[i].transform.localPosition = subpicOriginalPos[i];
-            subImages[i].gameObject.name =targetIndex ; // 设置name
+            subImages[i].gameObject.name = targetIndex; // 设置name
             subImages[i].transform.GetComponent<SubPic>().Init(targetIndex);
         }
         //设置手指
@@ -123,6 +141,22 @@ public class GameController : MonoBehaviour
             array[i] = array[j];
             array[j] = temp;
         }
+    }
+
+    public bool CheckDis(string targetIndex)
+    {
+        if (currentSubPic == null) return false;
+        var target = main_sub_pic_pos[int.Parse(targetIndex)];
+        if (Vector2.Distance(currentSubPic.transform.position, target.position) < 100)
+        {
+            return true;
+        }
+        return false;
+    }
+
+    public void RefreshLevel()
+    {
+        InitLevel();
     }
 
 }
