@@ -92,8 +92,11 @@ public class GameController : MonoBehaviour
         //设置subpic
         for (int i = 0; i < subpicArr.Length; i++)
         {
+            var targetIndex = subpicArr[i].name.Split('_')[1]; // 获取subpic的下标
             subImages[i].sprite = subpicArr[i];
             subImages[i].transform.localPosition = subpicOriginalPos[i];
+            subImages[i].gameObject.name =targetIndex ; // 设置name
+            subImages[i].transform.GetComponent<SubPic>().Init(targetIndex);
         }
         //设置手指
         fingers_Img.sprite = finger_Sprite[0];

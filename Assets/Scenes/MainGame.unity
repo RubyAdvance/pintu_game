@@ -361,7 +361,7 @@ GameObject:
   - component: {fileID: 91240429}
   - component: {fileID: 91240428}
   m_Layer: 5
-  m_Name: sub9
+  m_Name: 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -516,6 +516,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isDragging: 0
   isPlaced: 0
+  index: 
 --- !u!1 &285490159
 GameObject:
   m_ObjectHideFlags: 0
@@ -680,7 +681,7 @@ GameObject:
   - component: {fileID: 517752736}
   - component: {fileID: 517752735}
   m_Layer: 5
-  m_Name: sub8
+  m_Name: 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -995,6 +996,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isDragging: 0
   isPlaced: 0
+  index: 
 --- !u!1 &719605405
 GameObject:
   m_ObjectHideFlags: 0
@@ -1007,7 +1009,7 @@ GameObject:
   - component: {fileID: 719605408}
   - component: {fileID: 719605407}
   m_Layer: 5
-  m_Name: sub6
+  m_Name: 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1230,6 +1232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isDragging: 0
   isPlaced: 0
+  index: 
 --- !u!1 &783278924
 GameObject:
   m_ObjectHideFlags: 0
@@ -1242,7 +1245,7 @@ GameObject:
   - component: {fileID: 783278927}
   - component: {fileID: 783278926}
   m_Layer: 5
-  m_Name: sub5
+  m_Name: 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1397,6 +1400,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isDragging: 0
   isPlaced: 0
+  index: 
 --- !u!1 &967927589
 GameObject:
   m_ObjectHideFlags: 0
@@ -1488,6 +1492,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isDragging: 0
   isPlaced: 0
+  index: 
 --- !u!1 &1029519824
 GameObject:
   m_ObjectHideFlags: 0
@@ -1500,7 +1505,7 @@ GameObject:
   - component: {fileID: 1029519827}
   - component: {fileID: 1029519826}
   m_Layer: 5
-  m_Name: sub1
+  m_Name: 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1822,6 +1827,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isDragging: 0
   isPlaced: 0
+  index: 
 --- !u!1 &1387510187
 GameObject:
   m_ObjectHideFlags: 0
@@ -1834,7 +1840,7 @@ GameObject:
   - component: {fileID: 1387510190}
   - component: {fileID: 1387510189}
   m_Layer: 5
-  m_Name: sub4
+  m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2065,6 +2071,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isDragging: 0
   isPlaced: 0
+  index: 
 --- !u!1 &1617139834
 GameObject:
   m_ObjectHideFlags: 0
@@ -2156,6 +2163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isDragging: 0
   isPlaced: 0
+  index: 
 --- !u!1 &1688287287
 GameObject:
   m_ObjectHideFlags: 0
@@ -2168,7 +2176,7 @@ GameObject:
   - component: {fileID: 1688287290}
   - component: {fileID: 1688287289}
   m_Layer: 5
-  m_Name: sub3
+  m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2244,7 +2252,7 @@ GameObject:
   - component: {fileID: 1815679643}
   - component: {fileID: 1815679642}
   m_Layer: 5
-  m_Name: sub2
+  m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2320,7 +2328,7 @@ GameObject:
   - component: {fileID: 1855653864}
   - component: {fileID: 1855653863}
   m_Layer: 5
-  m_Name: sub7
+  m_Name: 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2520,6 +2528,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isDragging: 0
   isPlaced: 0
+  index: 
 --- !u!1 &1928110385
 GameObject:
   m_ObjectHideFlags: 0
