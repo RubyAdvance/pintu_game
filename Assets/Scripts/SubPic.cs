@@ -22,6 +22,7 @@ public class SubPic : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointer
     public void Init(string curIndex)
     {
         index = curIndex;
+        isPlaced = false;
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -42,6 +43,7 @@ public class SubPic : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointer
     {
         if (isPlaced) return;
         transform.position = GameController.Instance.handMove.transform.position;
+        transform.SetAsLastSibling();
     }
 
     public void OnPointerUp(PointerEventData eventData)
@@ -52,8 +54,7 @@ public class SubPic : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointer
         if (GameController.Instance.CheckDis(index))
         {
             //放置成功
-            transform.SetParent(GameController.Instance.main_sub_pic_pos[int.Parse(index)]);
-            transform.localPosition = Vector3.zero;
+            transform.position = GameController.Instance.main_sub_pic_pos[int.Parse(index)].position;
             transform.localScale = Vector3.one;
             isPlaced = true;
             GameController.Instance.CurFinishedCount++;
